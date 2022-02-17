@@ -1,6 +1,6 @@
-## iOS 커리어 스타터 캠프
+### iOS 커리어 스타터 캠프
 
-### 묵찌빠 프로젝트 
+## 묵찌빠 게임
 
 ## Flow Chart
 ![스크린샷 2021-10-12 오후 3 06 03](https://user-images.githubusercontent.com/83689084/136900701-5df4dc0f-d773-42a7-b4a3-41b0fdf5e005.png)
@@ -20,8 +20,6 @@
     judgeRockPaperScissors(userHand: userHand, computerHand: computerHand)
     ```
 - 내 자신이 호출? or 내가 사용하는 함수가 호출?
-    - 프로젝트 진행중 의견이 달라서 저희가 생각한 부분을 정리해보았습니다.
-    - 숲재의 생각
         
         ```swift
         func playRockPaperScissors(){
@@ -42,7 +40,6 @@
         - 자신의 하위 함수에서 자신을 재귀호출하게 되면, 코드의 가독성이 떨어지고 추후 유지보수 시 어려움이 발생할 것이라고 생각했습니다.
         - 본 함수에서 재귀호출이 제일 마지막 단에서 실행되기 때문에 실질적으로 while문과 동일한 동작을 하는 것이라고 생각하였습니다.
         - 해당 함수는 가위바위보 1판을 플레이 하는 함수이고, 비겼을때만 다시 가위바위보를 진행하게 되는것이 명시되어 있어, 현실의 가위바위보와 동일한 로직을 가지게 되어 직관적으로 이해하기도 쉽다고 생각했습니다.
-    - Nicholas의 생각
         
         ```swift
         func playRockPaperScissors(){
